@@ -22,11 +22,12 @@
  *
  */
 
+require('dotenv').config()
  const HDWalletProvider = require('truffle-hdwallet-provider');
- const infuraKey = "5cb2e4bb01d6450097d5059472e83111";
+ const infuraKey = process.env.INFURA_KEY;
 
  // const fs = require('fs');
- const mnemonic = "mistake grass casino huge usage present umbrella strike memory teach daughter wrist";
+ const mnemonic = process.env.MNEMONIC;
 
  module.exports = {
 
